@@ -38,15 +38,173 @@
     </nav>
 
           <!-- BUTTONS -->
+          <div class="container">
+            <div class="col-md">
+              <button class="btn btn-primary m-3 btn-block" data-bs-toggle="modal" data-bs-target="#primaryModal">Primary</button>
+              <button class="btn btn-secondary m-3 btn-block" data-bs-toggle="modal" data-bs-target="#secondaryModal">Secondary</button>
+              <button class="btn btn-success m-3 btn-block" data-bs-toggle="modal" data-bs-target="#successModal">Success</button>
+              <button class="btn btn-danger m-3 btn-block" data-bs-toggle="modal" data-bs-target="#dangerModal">Danger</button>
+            </div>
+            <div class="col-md">
+              <button class="btn btn-warning m-3 btn-block" data-bs-toggle="modal" data-bs-target="#warningModal">Warning</button>
+              <button class="btn btn-info m-3 btn-block" data-bs-toggle="modal" data-bs-target="#infoModal">Info</button>
+              <button class="btn btn-light m-3 btn-block" data-bs-toggle="modal" data-bs-target="#lightModal">Light</button>
+              <button class="btn btn-dark m-3 btn-block" data-bs-toggle="modal" data-bs-target="#darkModal">Dark</button>
+            </div>
+          </div>
 
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
+            <div class="modal fade" id="primaryModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-primary">Primary Modal!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="primaryModal" on this div and a data-bs-target="#primaryModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="secondaryModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-secondary">Secondary Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="secondaryModal" on this div and a data-bs-target="#secondaryModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="successModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-success">Success Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="successModal" on this div and a data-bs-target="#successModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="dangerModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-danger">Danger Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="dangerModal" on this div and a data-bs-target="#dangerModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="warningModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-warning">Warning Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="warningModal" on this div and a data-bs-target="#warningModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="infoModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-info">Info Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="infoModal" on this div and a data-bs-target="#infoModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="lightModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-dark">Light Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is hooked up to primary button with an id="lightModal" on this div and a data-bs-target="#lightModal" on the button</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="darkModal">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-light">Dark Modal!!</h4>
+                    <button class="close btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-light">This is hooked up to primary button with an id="darkModal" on this div and a data-bs-target="#darkModal" on the button</p>
+                    <p class="text-light">...you get the idea now...</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
         <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
